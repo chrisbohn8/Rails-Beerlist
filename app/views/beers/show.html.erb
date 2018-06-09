@@ -1,0 +1,37 @@
+<p>
+  <strong>Name:</strong>
+  <%= @beer.name %>
+</p>
+
+<p>
+  <strong>Tagline:</strong>
+  <%= @beer.tagline %>
+</p>
+
+<p>
+  <strong>ABV:</strong>
+  <%= @beer.abv %>
+</p>
+<p>
+  <strong>Tier:</strong>
+  <%= @beer.tier %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @beer.description %>
+</p>
+<p>
+  <strong>IBU:</strong>
+  <%= @beer.ibu %>
+</p>
+<p>
+  <strong>Image Path:</strong>
+  <%= @beer.image %>
+</p>
+<p>
+  <strong>On Tap:</strong>
+  <%= @beer.ontap %>
+</p>
+
+<%= link_to 'Edit', edit_beer_path(@beer) %> |
+<%= link_to 'Back', beers_path %>

@@ -1,0 +1,51 @@
+<h1>Beer Index</h1>
+
+<h2>Beers On Tap</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>On Tap</th>
+    <th></th>
+  </tr>
+
+  <% @beers.each do |beer| %>
+	<% if beer.ontap == true %>
+   	 <tr>
+   	   <td><%= beer.name %></td>
+   	   <td><%= beer.ontap %></td>
+   	   <td><%= link_to 'Show', beer_path(beer) %></td>
+   	   <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
+   	   <td><%= link_to 'Delete', beer_path(beer),
+   	           method: :delete,
+   	           data: { confirm: 'Are you sure?' } %></td>
+   	 </tr>
+	<% end %>
+  <% end %>
+</table>
+
+<h2>Beers Not On Tap</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>On Tap</th>
+    <th></th>
+  </tr>
+
+  <% @beers.each do |beer| %>
+	<% if beer.ontap == false %>
+   	 <tr>
+   	   <td><%= beer.name %></td>
+   	   <td><%= beer.ontap %></td>
+   	   <td><%= link_to 'Show', beer_path(beer) %></td>
+   	   <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
+   	   <td><%= link_to 'Delete', beer_path(beer),
+   	           method: :delete,
+   	           data: { confirm: 'Are you sure?' } %></td>
+   	 </tr>
+	<% end %>
+  <% end %>
+</table>
+
+<h2><%= link_to 'Add New Beer', new_beer_path %></h2>
+
+<h2><%= link_to 'Beer List', beers_beerlist_path %></h2>

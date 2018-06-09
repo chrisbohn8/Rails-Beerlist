@@ -1,0 +1,716 @@
+<html id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ENBW Beer List</title>
+<%= stylesheet_link_tag "main" %>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet"/>
+  <!-- <meta http-equiv="refresh" content="3000"> -->
+</head>
+
+  <body>
+    <img id="beer-list" src="images/beer-list.svg" alt="Beer list">
+<div id="white-container">
+  <div id="beers">
+
+    <!-- Miro Miel -->
+    <div id="modalBtnMiro" class="modalBtnMiro beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Miro-Miel.svg" alt="Miro Miel">
+        <div class="beer-text">
+          <div class="beer-name">Miro Miel</div>
+          <div class="beer-tagline">Blonde Ale with Local Honey</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+      <div class="beer-abv">
+        <div class="abv-text">ABV</div>
+        <div class="abv-content">5.2%</div>
+      </div>
+      <div class="beer-tier">
+        <div class="beer-tier-text">TIER</div>
+        <div class="beer-tier-content">1</div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Cumberland Punch -->
+    <div id="modalBtnCp" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Cumberland-Punch.svg" alt="Cumberland Punch">
+        <div class="beer-text">
+          <div class="beer-name">Cumberland Punch</div>
+          <div class="beer-tagline">American Wheat Ale</div>
+        </div>
+     </div>
+     <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">6.2%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Young Hickory -->
+    <div id="modalBtnYh" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Young-Hickory.svg" alt="Young Hickory">
+        <div class="beer-text">
+          <div class="beer-name">Young Hickory</div>
+          <div class="beer-tagline">Hickory Smoked Porter </div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">4.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roaming Dog -->
+    <div id="modalBtnRd" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Roaming-Dog.svg" alt="Roaming Dog">
+        <div class="beer-text">
+          <div class="beer-name">Roaming Dog</div>
+          <div class="beer-tagline">ESB + APA = ASB</div>
+        </div>
+     </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">5.2%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swing Bridge -->
+    <div id="modalBtnSb" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Swing-Bridge.svg" alt="Swing Bridge">
+        <div class="beer-text">
+          <div class="beer-name">Swing Bridge IPA</div>
+          <div class="beer-tagline">American IPA</div>
+        </div>
+       </div>
+       <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">6.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- East Bank -->
+    <div id="modalBtnEb" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/East-Bank.svg" alt="East Bank">
+        <div class="beer-text">
+          <div class="beer-name">East Bank</div>
+          <div class="beer-tagline">Citra IPA</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">7.0%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Holla Blanc -->
+    <div id="modalBtnHb" class="beer">
+      <div class= logo-and-text>
+        <img class="enbw-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Holla Blanc</div>
+          <div class="beer-tagline">APA w/ Hallertau Blanc Hops</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">5.2%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wes Coast Hamatrillo -->
+    <div id="modalBtnWch" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Wes-Coast.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Wes Coast Hamatrillo</div>
+          <div class="beer-tagline">IPA, Amarillo and Citra Hops</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">7.2%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hipster Dance Party -->
+    <div id="modalBtnHdp" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Hipster-Dance-Party.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Hipster Dance Party</div>
+          <div class="beer-tagline">Double IPA</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">8.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">*</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Grievance -->
+<!--
+     <div id="modalBtnTg" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/The-Grievance.svg" alt="The Grievance">
+        <div class="beer-text">
+          <div class="beer-name">The Grievance </div>
+          <div class="beer-tagline">Chocolate and Cinnamon Milk Stout</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">5.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+    </div>
+    </div>
+-->
+
+    <!-- Talbot's Corner -->
+<!--
+     <div id="modalBtnTc" class="beer">
+      <div class= logo-and-text>
+        <img class="enbw-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Talbot's Corner</div>
+          <div class="beer-tagline">Belgian Style Witbier  </div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">6.0%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- Krautrock -->
+<!--
+    <div id="modalBtnKr" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Kraut-Rock.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Krautrock</div>
+          <div class="beer-tagline">Pale Ale</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">6.0%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- Blueberry Wheat -->
+<!--
+    <div id="modalBtnBw" class="beer">
+      <div class= logo-and-text>
+        <img class="enbw-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Blueberry Wheat</div>
+          <div class="beer-tagline">Wheat Ale</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">4.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- Coconut Creme Pie -->
+<!--
+    <div id="modalBtnCcp" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Coconut-Creme.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Coconut Crème Pie</div>
+          <div class="beer-tagline">Placeholder Text</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">6.7%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">2</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- Augustfest -->
+<!--
+    <div id="modalBtnAf" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/August-Fest.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">AugustFest</div>
+          <div class="beer-tagline">Blackberry Wheat</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">4.2%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- I'm an IPA Agent -->
+<!--
+    <div id="modalBtnIpaa" class="beer">
+      <div class= logo-and-text>
+        <img class="enbw-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">I'm an IPA Agent</div>
+          <div class="beer-tagline">American Pale Ale</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">5.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- Fire of the Century -->
+    <div id="modalBtnFc" class="beer">
+      <div class= logo-and-text>
+        <img class="enbw-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+        <div class="beer-text">
+          <div class="beer-name">Fire of the Century</div>
+          <div class="beer-tagline">Malty red w/ NZ hops</div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">5.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Woodland Street Hull Melon -->
+    <div id="modalBtnWhm" class="beer">
+      <div class= logo-and-text>
+        <img class="beer-logo" src="images/Woodland-St.svg" alt="Woodland Street">
+        <div class="beer-text">
+          <div class="beer-name">Woodland Hull Melon</div>
+          <div class="beer-tagline">Session IPA w/ Hull Melon Hops</div>
+        </div>
+    </div>
+    <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content">4.5%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content">1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wine & Cider List -->
+    <div id="wine-cider" class="beer">
+        <div id="wine-cider-list">
+          <div class="guest-total">
+            <div class="guest-name">JACK'S HARD CIDER $5</div>
+          </div>
+          <div class="guest-total">
+            <div class="guest-name">WINE $8</div>
+          </div>
+          <div class="guest-total">
+            <div class="guest-name">SPARKLING ROS&Eacute; $9</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tier-pricing">
+    <div class="tier">
+      <div class="tier-main-name">TIER 1</div>
+      <div class="taster">
+        <div class="tier-name">TASTER</div>
+        <div class="tier-content">$2</div>
+      </div>
+      <div class="half-pint">
+        <div class="tier-name">HALF PINT</div>
+        <div class="tier-content">$3</div>
+      </div>
+      <div class="pint">
+        <div class="tier-name">PINT</div>
+        <div class="tier-content">$5</div>
+      </div>
+      <div class="crowler">
+        <div class="tier-name">CROWLER</div>
+        <div class="tier-content">$8</div>
+      </div>
+      <div class="growler">
+        <div class="tier-name">GROWLER FILL</div>
+        <div class="tier-content">$13</div>
+      </div>
+    </div>
+    <div id="tier-2" class="tier">
+      <div class="tier-main-name">TIER 2</div>
+      <div class="taster">
+        <div class="tier-name">TASTER</div>
+        <div class="tier-content">$3</div>
+      </div>
+      <div class="half-pint">
+        <div class="tier-name">HALF PINT</div>
+        <div class="tier-content">$4</div>
+      </div>
+      <div class="pint">
+        <div class="tier-name">PINT</div>
+        <div class="tier-content">$6</div>
+      </div>
+      <div class="crowler">
+        <div class="tier-name">CROWLER</div>
+        <div class="tier-content">$10</div>
+      </div>
+      <div class="growler">
+        <div class="tier-name">GROWLER FILL</div>
+        <div class="tier-content">$16</div>
+      </div>
+    </div>
+</div>
+
+<div class="modals">
+    <!-- Miro Modal -->
+    <div id="miroModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnMiro" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Miro Miel</h1>
+          <h2 class="modal-subheading">Honey Blonde Ale</h2>
+          <img class="modal-logo" src="images/Miro-Miel.svg" alt="Miro Miel">
+          <p class="modal-paragraph">An American style blonde ale brewed with real, Tennesse honey. We source local honey to provide a floral aroma and flavor to balance the pilsner malt. Our flagship brew has a light bitterness and clean, crisp finish.</p>
+          <footer class="modal-footer">ABV: 5.2% | IBU: 15</footer>
+        </div>
+    </div>
+
+    <!-- Cumberland Punch Modal -->
+    <div id="cpModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnCp" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Cumberland Punch</h1>
+          <h2 class="modal-subheading">American Wheat Ale</h2>
+          <img class="modal-logo" src="images/Cumberland-Punch.svg" alt="Cumberland Punch">
+          <p class="modal-paragraph">Our American wheat ale is perfect on a hot summer day. Orange in color, bursting with flavor, this is a crushable wheat beer with a slight hop and smooth, refresshing citrus finish.</p>
+          <footer class="modal-footer">ABV: 6.2% | IBU: 26</footer>
+        </div>
+    </div>
+
+    <!-- Young Hickory Modal -->
+    <div id="yhModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnYh" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Young Hickory</h1>
+          <h2 class="modal-subheading">Hickory Smoked Porter</h2>
+          <img class="modal-logo" src="images/Young-Hickory.svg" alt="Young Hickory">
+          <p class="modal-paragraph">This brew is tailor made for backyard fire pit weather. We custom smoke the grain over hickory to provide a lightly smoked flavor balanced by a judicous use of brown and chocolate malts.</p>
+          <footer class="modal-footer">ABV: 4.5% | IBU: 23</footer>
+        </div>
+    </div>
+
+    <!-- Roaming Dog Modal -->
+    <div id="rdModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnRd" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Roaming Dog</h1>
+          <h2 class="modal-subheading">American Special Bitter</h2>
+          <img class="modal-logo" src="images/Roaming-Dog.svg" alt="Roaming Dog">
+          <p class="modal-paragraph">Our American Special Bitter features a rich caramel malt body with the classic APA, Cascade hops.</p>
+          <footer class="modal-footer">ABV: 5.2% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Swing Bridge Modal -->
+    <div id="sbModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnSb" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Swing Bridge</h1>
+          <h2 class="modal-subheading">American IPA</h2>
+          <img class="modal-logo" src="images/Swing-Bridge.svg" alt="Swing Bridge">
+          <p class="modal-paragraph">Combining the best aspects of the East Coast and West Coast IPA styles this American IPA is fruity, and floral. The hop profile works together creating a refreshing IPA balanced with a touch of amber malt.</p>
+          <footer class="modal-footer">ABV: 6.2% | IBU: 80</footer>
+        </div>
+    </div>
+
+    <!-- East Bank Modal -->
+    <div id="ebModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnEb" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">East Bank</h1>
+          <h2 class="modal-subheading">Citra IPA</h2>
+          <img class="modal-logo" src="images/East-Bank.svg" alt="East Bank">
+          <p class="modal-paragraph">Bright and citrusy aroma and flavor, East Bank is a really balanced IPA brewed with a nice rich Maris Otter Malt backbone. Citra hops really shine on this brew.</p>
+          <footer class="modal-footer">ABV: 7.0% | IBU: 74</footer>
+        </div>
+    </div>
+
+    <!-- Holla Blanc Modal -->
+    <div id="hbModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnHb" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Holla Blanc</h1>
+          <h2 class="modal-subheading">American Pale Ale</h2>
+          <img class="modal-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+          <p class="modal-paragraph">Placeholder text.</p>
+          <footer class="modal-footer">ABV: 5.2% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- The Grievance Modal -->
+    <div id="tgModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnTg" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">The Grievance</h1>
+          <h2 class="modal-subheading">Milk Stout</h2>
+          <img class="modal-logo" src="images/The-Grievance.svg" alt="The Grievance">
+          <p class="modal-paragraph">A rich milk stout brewed annually for Festivus. Features a healthy does of Olive and Sinclair chocolate, cinnamon, and lactose.</p>
+          <footer class="modal-footer">ABV: 5.5% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Talbot's Corner Modal -->
+    <div id="tcModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnTc" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Talbot's Corner</h1>
+          <h2 class="modal-subheading">Belgian Style Witbier</h2>
+          <img class="modal-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+          <p class="modal-paragraph">Placeholder text.</p>
+          <footer class="modal-footer">ABV: 6.0% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Fire of the Century Modal -->
+    <div id="fcModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnFc" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Fire of the Century</h1>
+          <h2 class="modal-subheading">Malty Red Ale</h2>
+          <img class="modal-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+          <p class="modal-paragraph">A balanced red ale utilizing rich malts and unique New Zealand hops.</p>
+          <footer class="modal-footer">ABV: 5.5% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Woodland Street Hull Melon Modal -->
+    <div id="whmModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnWhm" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Woodland Street</h1>
+          <h2 class="modal-subheading">Session IPA</h2>
+          <img class="modal-logo" src="images/Woodland-St.svg" alt="Woodland Street Logo">
+          <p class="modal-paragraph">A sessionable IPA showcasing hull melon hops.</p>
+          <footer class="modal-footer">ABV: 4.5% | IBU: 62</footer>
+        </div>
+    </div>
+
+    <!-- Krautrock Modal -->
+    <div id="krModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnKr" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Krautrock</h1>
+          <h2 class="modal-subheading">Pale Ale</h2>
+          <img class="modal-logo" src="images/Kraut-Rock.svg" alt="Krautrock">
+          <p class="modal-paragraph">A fruity pale ale with all German malt and all German hops.</p>
+          <footer class="modal-footer">ABV: 6.0% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Wes Coast Modal -->
+    <div id="wchModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnWch" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Wes Coast Hamatrillo</h1>
+          <h2 class="modal-subheading">Amarillo IPA</h2>
+          <img class="modal-logo" src="images/Wes-Coast.svg" alt="Wes Coast Logo">
+          <p class="modal-paragraph">West coast style IPA featuring Amarillo hops brewed inhonor of the late Wes Taylor.</p>
+          <footer class="modal-footer">ABV: 7.2% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Hipster Dance Party Modal -->
+    <div id="hdpModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnHdp" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Hipster Dance Party</h1>
+          <h2 class="modal-subheading">Double IPA</h2>
+          <img class="modal-logo" src="images/Hipster-Dance-Party.svg" alt="Hipster Dance Party Logo">
+          <p class="modal-paragraph">Double IPA brwed with piney/fruity hops, finishes dry thanks to a dark honey addition.</p>
+          <footer class="modal-footer">ABV: 8.5% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Blueberry Wheat Modal -->
+    <div id="bwModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnBw" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Blueberry Wheat</h1>
+          <h2 class="modal-subheading">Placeholder</h2>
+          <img class="modal-logo" src="images/ENBW-logo.svg" alt="ENBW Logo">
+          <p class="modal-paragraph">Light and refreshing wheat ale with a Hefe base and farm fresh seasonal blueberries.</p>
+          <footer class="modal-footer">ABV: 4.5% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Coconut Creme Pie Modal -->
+    <div id="ccpModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnCcp" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Coconut Crème Pie</h1>
+          <h2 class="modal-subheading">Placeholder</h2>
+          <img class="modal-logo" src="images/Coconut-Creme.svg" alt="Coconut Crème Pie Logo">
+          <p class="modal-paragraph">Malt forward beer brwed with lactose and toasted coconut.</p>
+          <footer class="modal-footer">ABV: 6.7% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- Augustfest Modal -->
+    <div id="afModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnAf" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">Augustfest</h1>
+          <h2 class="modal-subheading">Blackberry Wheat Ale</h2>
+          <img class="modal-logo" src="images/August-Fest.svg" alt="Augustfest Logo">
+          <p class="modal-paragraph">Our anniversary brew, this crushable wheat is a gem featuring local blackberries.</p>
+          <footer class="modal-footer">ABV: 4.2% | IBU: PH</footer>
+        </div>
+    </div>
+
+    <!-- I'm an IPA Agent Modal -->
+    <div id="ipaaModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtnIpaa" class="closeBtn">&times;</span>
+          <h1 class="modal-heading">I'm an IPA Agent</h1>
+          <h2 class="modal-subheading">American Pale Ale</h2>
+          <img class="modal-logo" src="images/ENBW-logo.svg" alt="Augustfest Logo">
+          <p class="modal-paragraph">American Pale Ale with all Centennial hops and Maris Otter malt, a true SMASH (single malt and single hopped) beer.</p>
+          <footer class="modal-footer">ABV: 5.5% | IBU: PH</footer>
+        </div>
+    </div>
+  </div>
+
+
+<!--Modal JS error workaround FIX LATER-->
+<div class="hidden">
+    <div id="modalBtnMiro"></div>
+    <div id="modalBtnCp"></div>
+    <div id="modalBtnYh"></div>
+    <div id="modalBtnRd"></div>
+    <div id="modalBtnSb"></div>
+    <div id="modalBtnEb"></div>
+    <div id="modalBtnHb"></div>
+    <div id="modalBtnWch"></div>
+    <div id="modalBtnHdp"></div>
+    <div id="modalBtnKr"></div>
+    <div id="modalBtnBw"></div>
+    <div id="modalBtnCcp"></div>
+    <div id="modalBtnAf"></div>
+    <div id="modalBtnIPAgent"></div>
+    <div id="modalBtnTg"></div>
+    <div id="modalBtnTc"></div>
+</div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
