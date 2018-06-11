@@ -1,50 +1,24 @@
-<h1>Beer Index</h1>
+<link rel="stylesheet" href="assets/css/main.css" />
 
-<h2>Beers On Tap</h2>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>On Tap</th>
-    <th></th>
-  </tr>
+<h1 class="beer-index-header">Beer Index</h1>
 
+<h2 class="beer-selection-header">Beers On Tap</h2>
+  <ol>
   <% @beers.each do |beer| %>
 	<% if beer.ontap == true %>
-   	 <tr>
-   	   <td><%= beer.name %></td>
-   	   <td><%= beer.ontap %></td>
-   	   <td><%= link_to 'Show', beer_path(beer) %></td>
-   	   <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
-   	   <td><%= link_to 'Delete', beer_path(beer),
-   	           method: :delete,
-   	           data: { confirm: 'Are you sure?' } %></td>
-   	 </tr>
+   	   <li class="beer-selection"><%= beer.name %><br><%=  link_to 'Edit', edit_beer_path(beer) =%></li>
 	<% end %>
   <% end %>
-</table>
+  </ol>
 
 <h2>Beers Not On Tap</h2>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>On Tap</th>
-    <th></th>
-  </tr>
-
+  <ul>
   <% @beers.each do |beer| %>
 	<% if beer.ontap == false %>
-   	 <tr>
-   	   <td><%= beer.name %></td>
-   	   <td><%= beer.ontap %></td>
-   	   <td><%= link_to 'Show', beer_path(beer) %></td>
-   	   <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
-   	   <td><%= link_to 'Delete', beer_path(beer),
-   	           method: :delete,
-   	           data: { confirm: 'Are you sure?' } %></td>
-   	 </tr>
+       <li class="beer-name"><%= beer.name %><%=  link_to 'Edit', edit_beer_path(beer) =%></li>
 	<% end %>
   <% end %>
-</table>
+  </ul>
 
 <h2><%= link_to 'Add New Beer', new_beer_path %></h2>
 
