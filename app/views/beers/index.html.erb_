@@ -1,0 +1,25 @@
+<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+
+<h1 class="beer-index-header">Beer Index</h1>
+
+<h2 class="beer-selection-header">Beers On Tap</h2>
+  <ol>
+  <% @beers.each do |beer| %>
+	<% if beer.ontap == true %>
+   	   <li class="beer-selection"><%= beer.name %><br><%=  link_to 'Edit', edit_beer_path(beer) =%></li>
+	<% end %>
+  <% end %>
+  </ol>
+
+<h2>Beers Not On Tap</h2>
+  <ul>
+  <% @beers.each do |beer| %>
+	<% if beer.ontap == false %>
+       <li class="beer-name"><%= beer.name %><%=  link_to 'Edit', edit_beer_path(beer) =%></li>
+	<% end %>
+  <% end %>
+  </ul>
+
+<h2><%= link_to 'Add New Beer', new_beer_path %></h2>
+
+<h2><%= link_to 'Beer List', beers_beerlist_path %></h2>
