@@ -1,4 +1,7 @@
 class BeersController < ApplicationController
+
+  http_basic_authenticate_with name: "enbw", password: "seanthony5150", except: [:beerlist, :index, :show]
+
 	def beerlist
 		@beers = Beer.all
 	end
