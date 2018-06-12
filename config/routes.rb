@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
 	get 'beers/beerlist' => 'beers#beerlist'
 	resources :beers, :beerlist
-	root 'beerlist#index'
+	root 'beers#index'
 end
