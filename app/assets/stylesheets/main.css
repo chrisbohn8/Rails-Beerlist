@@ -425,3 +425,26 @@ input[type=checkbox]
  -webkit-transform: scale(2);
 }
 
+.beer-selection {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #233746;
+    text-align: left;
+}
+
+.beer-selection-header {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: #000;
+    text-align: left;
+}
+
+.beer-index-header {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #000;
+    text-align: left;
+}
