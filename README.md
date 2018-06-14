@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-Minor change to trigger heroku!!
+Minor change to trigger heroku!
